@@ -1,0 +1,33 @@
+.movielist-bucket-1 {
+  /* height: 300px; */
+  overflow-x: auto;
+}
+
+/* -webkit- (Chrome, Safari, newer versions of Opera): */
+.movielist-bucket-1::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* -moz- (Firefox): */
+.movielist-bucket-1 {
+  overflow: -moz-scrollbars-none;
+}
+/* -ms- (Internet Explorer +10): */
+.movielist-bucket-1 {
+  -ms-overflow-style: none;
+}
+
+.movie-img {
+  position: relative;
+  transition: all 0.5s;
+  padding: 25px 10px;
+  cursor: pointer;
+}
+
+.movie-img:hover {
+  transform: scale(1.2);
+}
+
+.movie-img:hover .overlayy {
+  opacity: 1;
+}

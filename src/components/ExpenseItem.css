@@ -1,0 +1,18 @@
+.bg-gray {
+  background-color: #808080;
+}
+
+.expense-item-bucket-3,
+.expense-item-bucket-2,
+.expense-item-bucket-1 {
+  border: 2px solid white;
+}
+
+.expense-item-bucket-2 {
+  background-color: #ff6373bc;
+}
+
+.amt {
+  background-color: black;
+  border: 2px solid white;
+}
