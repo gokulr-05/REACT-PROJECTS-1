@@ -6,15 +6,15 @@ let ExpenseDate = ({ date }) => {
   let year = date.getFullYear();
 
   return (
-    <div className="d-flex flex-column bg-black  expense-item-bucket-3 rounded-3 p-2  align-items-center">
+    <div className=" bg-black  expense-item-bucket-3 rounded-3 ">
       <div className="m-2">
-        <h4>{month}</h4>
+        <h4 className="text-center">{month}</h4>
       </div>
       <div className="m-2">
-        <p>{year}</p>
+        <p className="text-center">{year}</p>
       </div>
       <div className="m-2">
-        <h4>{day}</h4>
+        <h4 className="text-center">{day}</h4>
       </div>
     </div>
   );
