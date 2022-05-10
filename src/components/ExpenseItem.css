@@ -10,9 +10,16 @@
 
 .expense-item-bucket-2 {
   background-color: #ff6373bc;
+  padding: 3%;
 }
 
 .amt {
   background-color: black;
   border: 2px solid white;
+}
+
+.expense-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
 }

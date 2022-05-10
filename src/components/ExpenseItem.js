@@ -7,12 +7,12 @@ let ExpenseItem = ({ title, amt, date }) => {
       <div className="rounded-3 w-100 expense-item-bucket-2 d-flex align-items-center justify-content-between  my-2">
         <ExpenseDate date={date} />
         <div className=" ">
-          <span>{title}</span>
+          <span className="expense-title">{title}</span>
         </div>
 
-        {/* <div className="amt rounded-3 py-1 px-2 "> */}
-        <span>{`$${amt}`}</span>
-        {/* </div> */}
+        <div className="amt rounded-3 py-1 px-2 ">
+          <span>{`$${amt}`}</span>
+        </div>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ let App = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <Expenses expenses={expenses} />
     </div>
   );
