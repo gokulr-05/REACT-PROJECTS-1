@@ -1,0 +1,9 @@
+.expenseform-bucket-1 {
+  background-color: #ff6373bc;
+  outline: 10px solid black;
+}
+
+.expenseform-bucket-item {
+  width: 50%;
+  /* background-color: darkgrey; */
+}

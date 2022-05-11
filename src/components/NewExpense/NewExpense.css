@@ -1,0 +1,25 @@
+.new-expense-bucket-1 {
+  /* background-color: burlywood; */
+  /* background-color: #ff6373bc; */
+  /* background-color: black; */
+  width: 50%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* ########################### START MEDIA QUERIES#########################################  */
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .new-expense-bucket-1 {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ########################### END MEDIA QUERIES#########################################  */
