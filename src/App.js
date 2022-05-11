@@ -1,6 +1,12 @@
+import ExpenseFilter from "./components/NewExpense/ExpenseFilter";
 import Expenses from "./components/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 let App = () => {
+  let expenseFunc = (expenseData) => {
+    console.log("In App Js");
+    console.log("expenseData=", expenseData);
+  };
+
   const expenses = [
     {
       id: "e1",
@@ -25,7 +31,8 @@ let App = () => {
 
   return (
     <div className="">
-      <NewExpense />
+      {/* <ExpenseFilter /> */}
+      <NewExpense expenses={expenses} expenseFunc={expenseFunc} />
       <Expenses expenses={expenses} />
     </div>
   );

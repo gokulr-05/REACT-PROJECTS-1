@@ -1,0 +1,32 @@
+.expense-filter-bucket {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff6373bc;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.expense-filter-bucket > label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.expense-filter-bucket > select {
+  width: 30%;
+}
+
+/* ########################### START MEDIA QUERIES#########################################  */
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .expense-filter-bucket {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ########################### END MEDIA QUERIES#########################################  */
