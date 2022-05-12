@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./NewExpense/ExpenseFilter";
+import ExpenseChart from "./ExpenseChart";
 import "./NewExpense/ExpenseFilter.css";
 import "./Expenses.css";
 
@@ -39,6 +40,7 @@ let Expenses = ({ expenses }) => {
   return (
     <div>
       <ExpenseFilter selectedYear={selectedYear} filterYear={filterYear} />
+      <ExpenseChart yearFilteredArr={yearFilteredArr} />
       <div className="rounded p-3 bg-black expenses-bucket">
         {yearFilteredArr.length > 0 &&
           yearFilteredArr.map((val) => {

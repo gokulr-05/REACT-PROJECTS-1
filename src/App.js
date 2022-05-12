@@ -4,7 +4,7 @@ import ExpenseFilter from "./components/NewExpense/ExpenseFilter";
 import Expenses from "./components/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-const expenses = [
+const expenses1 = [
   {
     id: "e1",
     title: "White Paper",
@@ -25,6 +25,8 @@ const expenses = [
     date: new Date(2021, 5, 12),
   },
 ];
+
+let expenses = [];
 
 let App = () => {
   let [exp, setExp] = useState(expenses);

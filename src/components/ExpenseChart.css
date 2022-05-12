@@ -1,0 +1,49 @@
+.expense-chart-bucket-1 {
+  width: 50%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff6373bc;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.expense-chart-bucket-1 > label {
+}
+
+.expense-chart-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+
+  overflow: hidden;
+  height: 90%;
+  border: 2px solid black;
+  width: 15px;
+  border-radius: 10px;
+}
+
+.expense-chart-fill {
+  /* height: 90%; */
+  width: 100%;
+  /* background-color: #f73d93; */
+  /* background-color: blueviolet; */
+  background-color: #da0037;
+}
+
+/* ########################### START MEDIA QUERIES#########################################  */
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .expense-chart-bucket-1 {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ########################### END MEDIA QUERIES#########################################  */
