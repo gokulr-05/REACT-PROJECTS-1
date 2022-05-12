@@ -22,9 +22,9 @@ let ExpenseItem = ({ title, amt, date }) => {
           <span>{`$${amt1}`}</span>
         </div>
 
-        <button className="btn btn-dark" onClick={btnHandler}>
+        {/* <button className="btn btn-dark" onClick={btnHandler}>
           Button
-        </button>
+        </button> */}
       </div>
     </div>
   );

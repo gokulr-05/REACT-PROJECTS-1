@@ -6,7 +6,22 @@ import "./NewExpense/ExpenseFilter.css";
 import "./Expenses.css";
 
 let Expenses = ({ expenses }) => {
-  let [selectedYear, setSelectedYear] = useState("2020");
+  let [selectedYear, setSelectedYear] = useState("2021");
+  // console.log("selectedYear=", selectedYear);
+  // console.log("expenses=", expenses);
+
+  // console.log(
+  //   typeof expenses[0].date.getFullYear(),
+  //   expenses[0].date.getFullYear()
+  // );
+
+  // console.log(
+  //   typeof expenses[0].date.getFullYear().toString(),
+  //   expenses[0].date.getFullYear()
+  // );
+
+  // expenses.map((val)=>{});
+  // let [yearArr, setYearArr] = useState(yearFilteredArr);
 
   let filterYear = (year) => {
     setSelectedYear(year);
@@ -15,33 +30,26 @@ let Expenses = ({ expenses }) => {
     console.log(year);
   };
 
+  let yearFilteredArr = [];
+
+  yearFilteredArr = expenses.filter((val) => {
+    return val.date.getFullYear().toString() === selectedYear.toString();
+  });
+
   return (
     <div>
       <ExpenseFilter selectedYear={selectedYear} filterYear={filterYear} />
       <div className="rounded p-3 bg-black expenses-bucket">
-        <ExpenseItem
-          title={expenses[0].title}
-          amt={expenses[0].amount}
-          date={expenses[0].date}
-        />
-
-        <ExpenseItem
-          title={expenses[1].title}
-          amt={expenses[1].amount}
-          date={expenses[1].date}
-        />
-
-        <ExpenseItem
-          title={expenses[2].title}
-          amt={expenses[2].amount}
-          date={expenses[2].date}
-        />
-
-        <ExpenseItem
-          title={expenses[3].title}
-          amt={expenses[3].amount}
-          date={expenses[3].date}
-        />
+        {yearFilteredArr.map((val) => {
+          return (
+            <ExpenseItem
+              key={Math.random().toString()}
+              title={val.title}
+              amt={val.amount}
+              date={val.date}
+            />
+          );
+        })}
       </div>
     </div>
   );

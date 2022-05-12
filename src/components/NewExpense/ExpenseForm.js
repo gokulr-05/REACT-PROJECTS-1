@@ -23,9 +23,9 @@ let ExpenseForm = ({ expenseFunction }) => {
     e.preventDefault();
 
     let value = {
-      enteredTitle: enteredTitle,
-      enteredAmt: enteredAmt,
-      enteredDate: new Date(enteredDate),
+      title: enteredTitle,
+      amount: enteredAmt,
+      date: new Date(enteredDate),
     };
     console.log(value);
     expenseFunction(value);
@@ -87,7 +87,7 @@ let ExpenseForm = ({ expenseFunction }) => {
             <input
               value={enteredDate}
               type="date"
-              min="2022-01-01"
+              min="2019-01-01"
               max="2022-12-31"
               className="form-control"
               dir="rtl"

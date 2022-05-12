@@ -1,9 +1,15 @@
+import { useState } from "react";
 import "./ExpenseFilter.css";
-let ExpenseFilter = ({ filterYear, selectedYear }) => {
-  console.log("selectedYear=", selectedYear);
+let ExpenseFilter = ({ filterYear, selectedYear, filterYearFunc }) => {
+  // let [stateYear, setStateYear] = useState(selectedYear);
+
+  // console.log("selectedYear=", selectedYear);
+
+  // filterYear(stateYear);
 
   let yearChangeHandler = (e) => {
     filterYear(e.target.value);
+    // setStateYear(e.target.value);
   };
 
   return (
