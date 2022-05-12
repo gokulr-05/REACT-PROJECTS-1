@@ -7,7 +7,7 @@ import "./NewExpense/ExpenseFilter.css";
 import "./Expenses.css";
 
 let Expenses = ({ expenses }) => {
-  let [selectedYear, setSelectedYear] = useState("2021");
+  let [selectedYear, setSelectedYear] = useState("2022");
   // console.log("selectedYear=", selectedYear);
   // console.log("expenses=", expenses);
 
