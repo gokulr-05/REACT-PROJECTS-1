@@ -40,7 +40,6 @@ let App = () => {
 
   return (
     <div className="">
-      {/* <ExpenseFilter /> */}
       <NewExpense expenses={expenses} expenseFunc={expenseFunc} />
       <Expenses expenses={exp} />
     </div>

@@ -40,16 +40,21 @@ let Expenses = ({ expenses }) => {
     <div>
       <ExpenseFilter selectedYear={selectedYear} filterYear={filterYear} />
       <div className="rounded p-3 bg-black expenses-bucket">
-        {yearFilteredArr.map((val) => {
-          return (
-            <ExpenseItem
-              key={Math.random().toString()}
-              title={val.title}
-              amt={val.amount}
-              date={val.date}
-            />
-          );
-        })}
+        {yearFilteredArr.length > 0 &&
+          yearFilteredArr.map((val) => {
+            return (
+              <ExpenseItem
+                key={Math.random().toString()}
+                title={val.title}
+                amt={val.amount}
+                date={val.date}
+              />
+            );
+          })}
+
+        {yearFilteredArr.length === 0 && (
+          <h3 className="text-white text-center">No Data Found</h3>
+        )}
       </div>
     </div>
   );

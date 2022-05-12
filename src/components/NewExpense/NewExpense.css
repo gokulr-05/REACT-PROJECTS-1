@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.bg-pink {
+  background-color: #ff6373bc;
+}
+
 /* ########################### START MEDIA QUERIES#########################################  */
 
 @media (min-width: 0px) and (max-width: 991px) {

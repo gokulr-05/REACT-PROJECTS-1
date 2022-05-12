@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./ExpenseForm.css";
 
-let ExpenseForm = ({ expenseFunction }) => {
+let ExpenseForm = ({ expenseFunction, showAddDataHandler }) => {
   let [enteredTitle, setEnteredTitle] = useState("");
   let [enteredAmt, setEnteredAmt] = useState("");
   let [enteredDate, setEnteredDate] = useState("");
@@ -33,6 +33,7 @@ let ExpenseForm = ({ expenseFunction }) => {
     setEnteredTitle("");
     setEnteredAmt("");
     setEnteredDate("");
+    showAddDataHandler();
   };
 
   return (
@@ -96,9 +97,18 @@ let ExpenseForm = ({ expenseFunction }) => {
           </div>
         </div>
 
-        <div className="expenseform-bucket-button rounded-2">
+        <div className="expenseform-bucket-button rounded-2 ">
           <button type="submit" className="text-capitalize btn btn-dark">
-            submit
+            add expense
+          </button>
+          <button
+            type="submit"
+            onClick={() => {
+              showAddDataHandler();
+            }}
+            className="ms-3 text-capitalize btn btn-dark"
+          >
+            cancel
           </button>
         </div>
       </div>
