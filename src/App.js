@@ -32,13 +32,29 @@ let App = () => {
   let [exp, setExp] = useState(expenses);
 
   let expenseFunc = (expenseData) => {
-    console.log("In App Js");
-    console.log("expenseData=", expenseData);
+    // console.log("In App Js");
+    // console.log("expenseData=", expenseData);
 
     setExp((prev) => {
       return [expenseData, ...prev];
     });
   };
+
+  // ###########################################################################
+  // let expenseFunc1 = (expenseData) => {
+  //   console.log("In App Js");
+  //   console.log("expenseData=", expenseData);
+
+  //   setExp((prev) => {
+  //     let expenseDataArr = [expenseData, ...prev];
+  //     localStorage.setItem("expenseDataArr", JSON.stringify(expenseDataArr));
+  //     let arr = JSON.parse(localStorage.getItem("expenseDataArr"));
+  //     console.log("from local storage:", arr);
+  //     return arr;
+  //   });
+  // };
+
+  // ###########################################################################
 
   return (
     <div className="">

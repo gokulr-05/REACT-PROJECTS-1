@@ -3,7 +3,7 @@ import "./ExpenseChartItem.css";
 let ExpenseChartItem = ({ val, label, max }) => {
   let height = `${Math.round((val / max) * 100)}%`;
 
-  console.log("max in item=", max);
+  // console.log("max in item=", max);
 
   return (
     <div>
@@ -12,7 +12,7 @@ let ExpenseChartItem = ({ val, label, max }) => {
       </div>
       <label
         className="text-white"
-        style={{ fontSize: "18px", fontWeight: "500" }}
+        style={{ fontSize: "15px", fontWeight: "300" }}
       >
         {label}
       </label>

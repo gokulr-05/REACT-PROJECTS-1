@@ -27,8 +27,8 @@ let Expenses = ({ expenses }) => {
   let filterYear = (year) => {
     setSelectedYear(year);
 
-    console.log("Expenses.js");
-    console.log(year);
+    // console.log("Expenses.js");
+    // console.log(year);
   };
 
   let yearFilteredArr = [];

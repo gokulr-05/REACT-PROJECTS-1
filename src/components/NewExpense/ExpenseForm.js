@@ -27,7 +27,7 @@ let ExpenseForm = ({ expenseFunction, showAddDataHandler }) => {
       amount: enteredAmt,
       date: new Date(enteredDate),
     };
-    console.log(value);
+    // console.log(value);
     expenseFunction(value);
 
     setEnteredTitle("");

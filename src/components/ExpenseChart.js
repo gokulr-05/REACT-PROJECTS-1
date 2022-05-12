@@ -3,11 +3,11 @@ import ExpenseChartItem from "./ExpenseChartItem";
 
 let ExpenseChart = ({ yearFilteredArr }) => {
   let max = 0;
-  console.log("yearFilteredArr=", yearFilteredArr);
+  // console.log("yearFilteredArr=", yearFilteredArr);
 
-  yearFilteredArr.map((val) => {
-    console.log(val.date.getMonth());
-  });
+  // yearFilteredArr.map((val) => {
+  //   console.log(val.date.getMonth());
+  // });
 
   let height = "10%";
   let arr = [
@@ -29,14 +29,14 @@ let ExpenseChart = ({ yearFilteredArr }) => {
     arr[i.date.getMonth()].val = arr[i.date.getMonth()].val + i.amount;
   }
 
-  console.log("arr=", arr);
+  // console.log("arr=", arr);
 
   for (let j of arr) {
     if (j.val > max) {
       max = j.val;
     }
 
-    console.log("max=", max);
+    // console.log("max=", max);
   }
 
   return (
